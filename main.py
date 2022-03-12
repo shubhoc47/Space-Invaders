@@ -94,13 +94,13 @@ if __name__ == '__main__':
 
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_LEFT:
-                    PlayerChangeX = -2
+                    PlayerChangeX = -1
                 elif event.key == pygame.K_RIGHT:
-                    PlayerChangeX = 2
+                    PlayerChangeX = 1
                 if event.key == pygame.K_UP:
-                    PlayerChangeY = -2
+                    PlayerChangeY = -1
                 elif event.key == pygame.K_DOWN:
-                    PlayerChangeY = 2
+                    PlayerChangeY = 1
                 if event.key == pygame.K_SPACE:
                     # print(bulletStatus)
                     if not bulletStatus:
@@ -120,11 +120,11 @@ if __name__ == '__main__':
             EnemyX[i] += EnemyChangeX[i]
             EnemyY[i] += EnemyChangeY[i]
             if EnemyX[i] >= 736:
-                EnemyChangeX[i] = -1.5
+                EnemyChangeX[i] = -0.5
                 EnemyY[i] += 30
 
             elif EnemyX[i] < 0:
-                EnemyChangeX[i] = 1.5
+                EnemyChangeX[i] = 0.5
                 EnemyY[i] += 30
 
 
